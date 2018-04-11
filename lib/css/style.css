@@ -168,13 +168,13 @@
 }
 
 .tech{
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
 
-    border: 1px solid darkgrey;
-    border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;  
+    border: 2px solid #f1f1f1;
+    border-radius: 19px;
+    -moz-border-radius: 19px;
+    -webkit-border-radius: 19px;  
     
     display: inline-block;
     vertical-align: top;
@@ -182,19 +182,102 @@
     margin: 0px 2px 0px;
 }
 
-.repo{
-    margin: 15px 0px 5px;
-    text-align: right;
+.android{
+   background: url(../../images/stackLogo/android.png);
+   background-size: cover; 
+   opacity: 1;
 }
 
-.repo p{
+.angular{
+   background: url(../../images/stackLogo/angular.png);
+   background-size: cover;   
+   background-size: 90%; 
+   background-repeat: no-repeat;
+   background-position: 3px 3px;      
+}
+
+.css{
+   background: url(../../images/stackLogo/css3.png);
+   background-size: cover;     
+}
+
+.html{
+   background: url(../../images/stackLogo/html5.png);
+   background-size: cover;     
+}
+
+.ionic{
+   background: url(../../images/stackLogo/ionic.jpg);
+   background-size: cover;
+   background-size: 90%; 
+   background-repeat: no-repeat;
+   background-position: 2px 2px;      
+}
+
+.java{
+   background: url(../../images/stackLogo/java.png);
+   background-size: cover;     
+}
+
+.javascript{
+    background: url(../../images/stackLogo/javascript.png);
+    background-size: 80%; 
+    background-repeat: no-repeat;
+    background-position: 4px 4px;    
+}
+
+.mysql{
+   background: url(../../images/stackLogo/mysql.png);
+   background-size: cover;     
+}
+
+.node{
+   background: url(../../images/stackLogo/node.jpg);
+   background-size: cover;  
+}
+
+.php{
+   background: url(../../images/stackLogo/php.png);
+   background-size: cover;     
+}
+
+.xml{
+    background: url(../../images/stackLogo/xml.png);
+    background-size: cover;    
+}
+
+.repo{
+    margin: 15px 0px 5px;
+}
+
+.repoSite{
+    font-family: calibri;
+    font-size: 11px;
+
+    color: lightgrey;
+    background: whitesmoke;
+
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;  
+
+    padding: 1px 5px;
+    margin:-1px;
+
+    float: left;
+}
+
+.repoLink{
     font-family: calibri;
     font-size: 12px;
     font-style: italic;
     color: lightgrey;
+
+    float: right;
 }
 
-.repo a{
+.repoLink a{
     color: grey;
     text-decoration: none;
 }
