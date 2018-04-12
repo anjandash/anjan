@@ -128,6 +128,14 @@
     
 }
 
+.xs{
+    height: 80px;
+}
+
+.small{
+    height: 40px;
+}
+
 .title{
     width: 100%;
     height: auto;
@@ -165,13 +173,15 @@
 
     border: 0px solid red;
     text-align: right;
+
+    opacity: 0.7;
 }
 
 .tech{
     width: 36px;
     height: 36px;
 
-    border: 2px solid #f1f1f1;
+    border: 2px solid #d1d1d1;
     border-radius: 19px;
     -moz-border-radius: 19px;
     -webkit-border-radius: 19px;  
@@ -185,7 +195,6 @@
 .android{
    background: url(../../images/stackLogo/android.png);
    background-size: cover; 
-   opacity: 1;
 }
 
 .angular{
@@ -199,11 +208,19 @@
 .css{
    background: url(../../images/stackLogo/css3.png);
    background-size: cover;     
+   color: #88BCE1;
 }
 
 .html{
    background: url(../../images/stackLogo/html5.png);
    background-size: cover;     
+   color: #FF7C44;
+}
+
+.indexeddb{
+   background: url(../../images/stackLogo/indexeddb.png);
+   background-size: cover;      
+   color: grey;
 }
 
 .ionic{
@@ -216,7 +233,8 @@
 
 .java{
    background: url(../../images/stackLogo/java.png);
-   background-size: cover;     
+   background-size: cover;  
+   color: #ff0040;   
 }
 
 .javascript{
@@ -224,11 +242,13 @@
     background-size: 80%; 
     background-repeat: no-repeat;
     background-position: 4px 4px;    
+    color: #F7DF1E;
 }
 
-.mysql{
-   background: url(../../images/stackLogo/mysql.png);
-   background-size: cover;     
+.mongo{
+   background: url(../../images/stackLogo/mongo.png);
+   background-size: cover;      
+   color: #70B271;
 }
 
 .node{
@@ -238,7 +258,20 @@
 
 .php{
    background: url(../../images/stackLogo/php.png);
-   background-size: cover;     
+   background-size: cover; 
+   color: #728AC1;    
+}
+
+.react{
+   background: url(../../images/stackLogo/react.png);
+   background-size: cover;      
+}
+
+.sql{
+   background: url(../../images/stackLogo/mysql.png);
+   background-size: cover;   
+   color: #B9C3CD;  
+   color: #FBBD91;
 }
 
 .xml{
@@ -254,7 +287,7 @@
     font-family: calibri;
     font-size: 11px;
 
-    color: lightgrey;
+    color: darkgrey;
     background: whitesmoke;
 
     border: 1px solid whitesmoke;
@@ -284,6 +317,73 @@
 
 .bold{
     font-size: 20px;
+}
+
+.langHead{
+    width: 100%;
+    height: 30px;
+
+    border: 0px solid grey;
+}
+
+.langName{
+    width: 150px;
+    height: auto;
+
+    border: 0px solid red;
+    float: left;
+}
+
+.langLogo{
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid whitesmoke;
+    float: right;
+
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+    margin-top: -8px;
+}
+
+.proficiency{
+    width: 100%;
+    height: auto;
+
+    color: grey;
+    border: 0px solid red;
+    margin-top: 0px;
+}
+
+.score{
+    width: 265px;
+    height: 6px;
+
+    box-sizing: border-box;
+    background: none;
+
+    border: 0px solid whitesmoke;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;    
+
+    margin: 6px 0px 3px;
+}
+
+.novice{
+    font-size: 11px;
+    font-style: italic;
+    float: left;
+    background: none;
+}
+
+.superNinja{
+    font-size: 11px;
+    font-style: italic;
+    float: right;
+    background: none;
 }
 
 #timeline{
