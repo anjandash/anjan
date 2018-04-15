@@ -12,11 +12,16 @@
     margin: 0px;
     padding: 0px;
     font-family: Nunito;
+    cursor: context-menu;
+}
+
+a{
+    cursor: pointer;
 }
 
 #headerPrime{
     width: 100%;
-    height: 400px;
+    height: 470px;
 
     max-width: 100%;
     max-width: none;
@@ -32,7 +37,7 @@
 }
 
 #headerMenu{
-    height: 200px;
+    height: 240px;
     width: 100%;
 
     background: darkgrey;
@@ -43,13 +48,11 @@
 }
 
 #headerCont{
-    width: 70%;
+    width: 950px;
     height: 300px;
 
     border: 0px solid whitesmoke;
     background: linear-gradient(140deg, #1D1AA9 20%, #8553B3 60%, #B258D7);
-
-    
 
     border-radius: 10px;
     -moz-border-radius: 10px;
@@ -59,11 +62,81 @@
     -moz-box-shadow: 0px 4px 12px 1px lightgrey;
     -webkit-box-shadow: 0px 4px 12px 1px lightgrey;
 
-    margin: 3% auto;
+    margin: 7% auto;
+    padding: 1px 0px;
     text-align: center;
 
     z-index: 2;
     position: relative;
+}
+
+.topFrame{
+    width: 100%;
+    height: 80px;
+    border: 1px solid red;
+
+    display: block;
+}
+
+#photo{
+    height: 140px;
+    width: 140px;
+
+    background: linear-gradient(150deg, whitesmoke 40%, #cdcdcd 100%);
+
+    border: 0px solid whitesmoke;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;    
+
+    margin: -60px auto 0px;
+}
+
+.frame{
+    height: 100px;
+    width: 100%;
+
+    border: 1px solid whitesmoke;
+    margin: 2px 0px;
+}
+
+#nextDots{
+    border: 0px solid yellow;
+    margin: 0px auto;
+    cursor: context-menu;
+}
+
+.dot{
+    height: 8px;
+    width: 8px;
+
+    background: #402a77cc;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 10px auto 2px;
+    cursor: pointer;
+}
+
+.select{
+    background: #ededed55;
+}
+
+#name{
+    color: whitesmoke;
+    border: 1px solid yellowgreen;
+    font-size: 22px;
+    margin: 10px auto 4px;
+}
+
+#name2{
+    color: whitesmoke;
+    font-size: 14px;
+    margin: 0px auto;
 }
 
 #sectionIntro{
@@ -76,8 +149,8 @@
     border-bottom: 1px solid whitesmoke;
 }
 
-#introCont{
-    width: 70%;
+.introCont{
+    width: 950px;
     height: auto;
 
     border: 1px solid whitesmoke;
@@ -126,14 +199,6 @@
 
     text-align: left;
     
-}
-
-.xs{
-    height: 80px;
-}
-
-.small{
-    height: 40px;
 }
 
 .title{
@@ -205,10 +270,35 @@
    background-position: 3px 3px;      
 }
 
+.aws{
+   background: url(../../images/stackLogo/aws.png);
+   background-size: cover;     
+}
+
+.bootstrap{
+   background: url(../../images/stackLogo/bootstrap.png);
+   background-size: cover;      
+}
+
 .css{
    background: url(../../images/stackLogo/css3.png);
    background-size: cover;     
    color: #88BCE1;
+}
+
+.docker{
+   background: url(../../images/stackLogo/docker.png);
+   background-size: cover;     
+}
+
+.git{
+   background: url(../../images/stackLogo/git.png);
+   background-size: cover;     
+}
+
+.heroku{
+   background: url(../../images/stackLogo/heroku.png);
+   background-size: cover;     
 }
 
 .html{
@@ -299,6 +389,7 @@
     margin:-1px;
 
     float: left;
+    cursor: pointer;
 }
 
 .repoLink{
@@ -387,7 +478,7 @@
 }
 
 #timeline{
-    width: 70%;
+    width: 950px;
     height: auto;
     min-height: 300px;
 
@@ -400,4 +491,38 @@
     margin: 20px auto;
     padding: 20px 0px;
     text-align: center;
+}
+
+.xs{
+    height: 80px;
+}
+
+.small{
+    height: 40px;
+    background-size: 40%;
+    background-repeat: no-repeat;    
+    background-position: 95% -10%;  
+}
+
+.mini{
+    height: 40px;
+    background-size: 30%;
+    background-repeat: no-repeat;    
+    background-position: 95% 15%;  
+}
+
+.subhead{
+    font-weight: normal; 
+    margin-top: 70px;    
+}
+
+.primeColor{
+    color: grey;
+    background-color: #eee;
+    background: repeating-radial-gradient(circle at 40px 0px, #eee 10%, #ddd 100%);
+}
+
+.radialColor{
+    background-color: #f06d06;
+    background: radial-gradient(circle at top right, yellow, #f06d06 50%);
 }
