@@ -229,6 +229,18 @@ a{
     text-align: center;
 }
 
+.introText{
+    display: inline-block;
+    margin: 0px auto;
+
+    font-weight: normal;
+    font-size: 22px;    
+
+    background: -webkit-linear-gradient(120deg, blue, red, orangered, gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .introHead{
     width: 90%;
     margin: 2.5% auto;
@@ -636,7 +648,8 @@ a{
     vertical-align: top;
 
     border: 0px solid red;
-    margin: -3px 4px;
+    margin: -6px 4px;
+    opacity: 1;
 }
 
 .flag{display:inline-block;background:url('../../images/assets/flags.png') no-repeat}
@@ -645,3 +658,8 @@ a{
 .flag.flag-gb{background-position:-32px 0}
 .flag.flag-it{background-position:0 -32px}
 .flag.flag-us{background-position:-32px -32px}
+
+.light{
+    color: darkgrey;
+    font-size: 14px;
+}
