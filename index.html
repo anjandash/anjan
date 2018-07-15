@@ -3,10 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Anjan Karmakar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anjan Karmakar</title>    
+
     <link rel="stylesheet" type="text/css" media="screen" href="lib/css/style.css" />
     <link rel="shortcut icon" type="image/png" href="images/assets/favicon.png"/>
+    <script src="lib/js/salvattore.js"></script>
     <script src="lib/js/main.js"></script>
 </head>
 <body>
@@ -29,7 +31,6 @@
                     <div class="dot"></div>
                 </div>
                 <div id="name">Hi, I am Anjan!</div>
-                <div id="name2">Good to see you here!</div>
             </div>
 
             <div class="frame bottomFrame">  
@@ -44,249 +45,254 @@
     </div>
 
     <div id="sectionIntro">
+        <!-- <div class="introCont primeColor">
+            <div class="introText">First things first</div>
+        </div>  -->
+
         <div class="introCont primeColor">
             <div class="introText">Some of my projects</div>
         </div>   
 
         <div class="introCont">
-
-            <!-- <h2>Projects</h2>
-            <br/> -->
-            <p style="margin-top: 30px;">Full-scale apps:</p>
             <br/>
 
-            <div class="card">
-                <div class="title">
-                    <div class="titleLogo" style="background: url(images/projectLogo/bumble-logo.png); background-size: cover;"></div>
-                    <div class="titleText">Bumble</div>
-                </div>
-
-                <div class="desc">
-                    Android app to hide and share secret<br/> messages in images
-                </div>
-
-                <div class="stack">
-                    <div class="tech android"></div>
-                    <div class="tech java"></div>
-                    <div class="tech xml"></div>
-                </div>
-
-                <div class="repo">
-                    <a href="https://play.google.com/store/apps/details?id=com.pixellato.bumble" target="_blank">
-                        <div class="repoSite">See on Play Store</div>
-                    </a>
-                    <div class="repoLink">Find this project on 
-                        <a href="https://bitbucket.org/anjandash/bumble/src" target="_blank">Bitbucket</a></div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="title">
-                    <div class="titleLogo" style="background: url(images/projectLogo/pixellato-logo.png); background-size: cover; border: 1px solid whitesmoke;"></div>
-                    <div class="titleText">Pixellato</div>
-                </div>
-                
-                <div class="desc">
-                    Online marketplace for user-generated photos for digital publishers & marketers
-                </div>
-                
-                <div class="stack">
-                    <div class="tech php"></div>
-                    <div class="tech javascript"></div>
-                    <div class="tech html"></div>
-                    <div class="tech css"></div>
-                    <div class="tech sql"></div>
-                </div>
-                
-                <div class="repo">
-                    <a href="http://pixellato.com" target="_blank">
-                        <div class="repoSite">Go to Project site</div>
-                    </a>
-                    <div class="repoLink">Find this project on
-                        <a href="https://bitbucket.org/anjandash/pixellato-php/src" target="_blank">Bitbucket</a>
+            <div id="grid" data-columns>
+                <div class="column size-1of2">
+                    <div class="appCard app1">
+                        <div class="curtain">
+                            <div class="title">
+                                <div class="titleLogo" style="background: url(images/projectLogo/bumble-logo.png); background-size: cover;"></div>
+                                <div class="titleText">Bumble</div>
+                            </div>
+                            <div class="desc">
+                                Android app to hide and share secret<br/> messages in images
+                            </div>
+                            <div class="build">
+                                <p>Made with:</p>
+                                <div class="bstack">
+                                    <div class="tech android"></div>
+                                    <div class="tech java"></div>
+                                    <div class="tech xml"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="repository">
+                        </div> -->
+                        <div class="deployment" onclick="window.open('https://play.google.com/store/apps/details?id=com.pixellato.bumble')">
+                            <p class="side" style="cursor: pointer;">Deployment</p><div class="side arrow"></div>
+                        </div>
                     </div>
+                    <div class="appCard app3">
+                        <div class="curtain">
+                            <div class="title">
+                                <div class="titleLogo" style="background: url(images/projectLogo/cssanimator-logo.png); background-size: cover;"></div>
+                                <div class="titleText">CSS Animator</div>
+                            </div>
+                            <div class="desc">
+                                Android app to demonstrate button animation actions with animate.css
+                            </div>
+                            <div class="build">
+                                <p>Made with:</p>
+                                <div class="bstack">
+                                    <div class="tech ionic"></div>
+                                    <div class="tech javascript"></div>
+                                    <div class="tech html"></div>
+                                    <div class="tech css"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="repository">
+                        </div> -->
+                        <div class="deployment" onclick="window.open('https://play.google.com/store/apps/details?id=io.ionic.starter.backslash')">
+                            <p class="side" style="cursor: pointer;">Deployment</p><div class="side arrow"></div>
+                        </div>
+                    </div>  
+                    <div class="appCard app5">
+                        <div class="curtain">
+                            <div class="title">
+                                <div class="titleLogo" style="background: url(images/projectLogo/pakango-logo.png); background-size: cover;"></div>
+                                <div class="titleText">Pakango</div>
+                            </div>                                            
+                            <div class="desc">
+                                Social package delivery app.<br/> Users offer to carry packages for senders.                
+                            </div>
+                            <div class="build">
+                                <p>Made with:</p>
+                                <div class="bstack">
+                                    <div class="tech php"></div>
+                                    <div class="tech javascript"></div>
+                                    <div class="tech html"></div>
+                                    <div class="tech css"></div>
+                                    <div class="tech sql"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="repository">
+                        </div> -->
+                        <div class="deployment" onclick="window.open('http://anjandash.com/pakango/index.php')">
+                            <p class="side" style="cursor: pointer;">Deployment</p><div class="side arrow"></div>
+                        </div>
+                    </div>                          
                 </div>
-            </div>
-
-            <div class="card">
-                <div class="title">
-                    <div class="titleLogo" style="background: url(images/projectLogo/cssanimator-logo.png); background-size: cover;"></div>
-                    <div class="titleText">CSS Animator</div>
-                </div>
-                
-                <div class="desc">
-                    Android app to demonstrate button animation actions
-                    with animate.css
-                </div>
-                
-                <div class="stack">
-                    <div class="tech ionic"></div>
-                    <div class="tech javascript"></div>
-                    <div class="tech html"></div>
-                    <div class="tech css"></div>
-                </div>
-                
-                <div class="repo">
-                    <a href="https://play.google.com/store/apps/details?id=io.ionic.starter.backslash" target="_blank">
-                        <div class="repoSite">See on Play Store</div>
-                    </a>
-                    <div class="repoLink">Find this project on
-                        <a href="https://bitbucket.org/anjandash/css-animator/src" target="_blank">Bitbucket</a>
+                <div class="column size-1of2">
+                    <div class="appCard app2">
+                        <div class="curtain">
+                            <div class="title">
+                                <div class="titleLogo" style="background: url(images/projectLogo/pixellato-logo.png); background-size: cover; border: 1px solid whitesmoke;"></div>
+                                <div class="titleText">Pixellato</div>
+                            </div>
+                            <div class="desc">
+                                Online marketplace for user-generated photos for digital publishers & marketers
+                            </div>
+                            <div class="build">
+                                <p>Made with:</p>
+                                <div class="bstack">
+                                    <div class="tech php"></div>
+                                    <div class="tech javascript"></div>
+                                    <div class="tech html"></div>
+                                    <div class="tech css"></div>
+                                    <div class="tech sql"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="repository">
+                        </div> -->
+                        <div class="deployment" onclick="window.open('http://pixellato.com')">
+                            <p class="side" style="cursor: pointer;">Deployment</p><div class="side arrow"></div>
+                        </div>
                     </div>
+                    <div class="appCard app4">
+                        <div class="curtain">
+                            <div class="title">
+                                <div class="titleLogo" style="background: url(images/projectLogo/amazetee-logo.png); background-size: cover; border: 1px solid whitesmoke;"></div>
+                                <div class="titleText">Amazetee</div>
+                            </div>
+                            <div class="desc">
+                                Online e-commerce store for t-shirts <br/>(with stripe payment integration)
+                            </div>
+                            <div class="build">
+                                <p>Made with:</p>
+                                <div class="bstack">
+                                    <div class="tech php"></div>
+                                    <div class="tech javascript"></div>
+                                    <div class="tech html"></div>
+                                    <div class="tech css"></div>
+                                    <div class="tech sql"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="repository">
+                        </div> -->
+                        <div class="deployment" onclick="window.open('http://anjandash.com/amazetee/index.php')">
+                            <p class="side" style="cursor: pointer;">Deployment</p><div class="side arrow"></div>
+                        </div>
+                    </div>   
+                    <div class="appCard app6">
+                        <div class="curtain">
+                            <div class="title">
+                                <div class="titleLogo" style="background: url(images/projectLogo/szg-logo.png); background-size: cover; border: 1px solid whitesmoke;"></div>
+                                <div class="titleText">SZG Events</div>
+                            </div>
+                            <div class="desc">
+                                Javascript web application for bus and events booking service
+                            </div>
+                            <div class="build">
+                                <p>Made with:</p>
+                                <div class="bstack">
+                                    <div class="tech php"></div>
+                                    <div class="tech javascript"></div>
+                                    <div class="tech html"></div>
+                                    <div class="tech css"></div>
+                                    <div class="tech sql"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="repository">
+                        </div> -->
+                        <div class="deployment" onclick="window.open('http://anjandash.com/szg-events/index.php')">
+                            <p class="side" style="cursor: pointer;">Deployment</p><div class="side arrow"></div>
+                        </div>
+                    </div>                            
                 </div>
             </div>
 
-            <div class="card">
-                <div class="title">
-                    <div class="titleLogo" style="background: url(images/projectLogo/amazetee-logo.png); background-size: cover; border: 1px solid whitesmoke;"></div>
-                    <div class="titleText">Amazetee</div>
-                </div>
-                
-                <div class="desc">
-                    Online e-commerce store for t-shirts <br/>(with stripe payment integration)
-                </div>
-                
-                <div class="stack">
-                    <div class="tech php"></div>
-                    <div class="tech javascript"></div>
-                    <div class="tech html"></div>
-                    <div class="tech css"></div>
-                    <div class="tech sql"></div>
-                </div>
-                
-                <div class="repo">
-                    <a href="http://anjandash.com/amazetee/index.php" target="_blank">
-                        <div class="repoSite">Go to Deployment</div>
-                    </a>
-                    <div class="repoLink">Find this project on
-                        <a href="https://bitbucket.org/amazetee/amazetee/src" target="_blank">Bitbucket</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="title">
-                    <div class="titleLogo" style="background: url(images/projectLogo/pakango-logo.png); background-size: cover;"></div>
-                    <div class="titleText">Pakango</div>
-                </div>
-                
-                <div class="desc">
-                    Social package delivery app. Users carry packages for senders on their daily or any commute.                
-                </div>
-                
-                <div class="stack">
-                    <div class="tech php"></div>
-                    <div class="tech javascript"></div>
-                    <div class="tech html"></div>
-                    <div class="tech css"></div>
-                    <div class="tech sql"></div>
-                </div>
-                
-                <div class="repo">
-                    <a href="http://anjandash.com/pakango/index.php" target="_blank">
-                        <div class="repoSite">Go to Deployment</div>
-                    </a>
-                    <div class="repoLink">Find this project on
-                        <a href="https://bitbucket.org/anjandash/pakango/src" target="_blank">Bitbucket</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="title">
-                    <div class="titleLogo" style="background: url(images/projectLogo/szg-logo.png); background-size: cover; border: 1px solid whitesmoke;"></div>
-                    <div class="titleText">SZG Events</div>
-                </div>
-                
-                <div class="desc">
-                    Javascript web application for bus and events booking service
-                </div>
-                
-                <div class="stack">
-                    <div class="tech php"></div>
-                    <div class="tech javascript"></div>
-                    <div class="tech html"></div>
-                    <div class="tech css"></div>
-                    <div class="tech sql"></div>
-                </div>
-                
-                <div class="repo">
-                    <a href="http://anjandash.com/szg-events/index.php" target="_blank">
-                        <div class="repoSite">Go to Deployment</div>
-                    </a>
-                    <div class="repoLink">Find this project on
-                        <a href="https://bitbucket.org/szg-events/szg-events/src" target="_blank">Bitbucket</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="title">
-                    <div class="titleLogo" style="background: url(images/projectLogo/unibzroomfinder-logo.png); background-size: cover;"></div>
-                    <div class="titleText">RoomFinder</div>
-                </div>
-                
-                <div class="desc">
-                    Angular2+ app to find and filter lectures / rooms at the University from the available unibz API
-                </div>
-                
-                <div class="stack">
-                    <div class="tech node"></div>
-                    <div class="tech angular"></div>
-                    <div class="tech javascript"></div>
-                    <div class="tech html"></div>
-                    <div class="tech css"></div>
-                </div>
-                
-                <div class="repo">
-                    <!-- <a href="#"> -->
-                        <div class="repoSite">Currently undeployed</div>
-                    <!-- </a> -->
-                    <div class="repoLink">Find this project on
-                        <a href="https://bitbucket.org/anjandash/unibzroomfinder/src" target="_blank">Bitbucket</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="title">
-                    <div class="titleLogo"></div>
-                    <div class="titleText">Musiclist</div>
-                </div>
+            <br/>
+            <br/>
             
-                <div class="desc">
+            <!-- <a href="https://bitbucket.org/anjandash/bumble/src" target="_blank">Bitbucket</a>
+            <a href="https://bitbucket.org/anjandash/pixellato-php/src" target="_blank">Bitbucket</a>
+            <a href="https://bitbucket.org/anjandash/css-animator/src" target="_blank">Bitbucket</a>
+            <a href="https://bitbucket.org/amazetee/amazetee/src" target="_blank">Bitbucket</a>
+            <a href="https://bitbucket.org/anjandash/pakango/src" target="_blank">Bitbucket</a>
+            <div class="repoLink">Find this project on
+                <a href="https://bitbucket.org/szg-events/szg-events/src" target="_blank">Bitbucket</a>
+            </div> -->
+
+            <!-- Other Projects (UNDEPLOYED) -->
+
+            <p style="margin-top:40px;">Other projects:</p>
+            <br/>
+
+            <div class="card s">
+                <div class="title2">
+                    <div class="titleLogo2" style="background: url(images/projectLogo/unibzroomfinder-logo.png); background-size: cover;"></div>
+                    <div class="titleText2">RoomFinder</div>
+                </div>
+                <div class="desc2">
+                    Angular app to find and filter lectures & available rooms at the University
+                </div>
+                <div class="stack">
+                    <div class="tech2 node"></div>
+                    <div class="tech2 angular"></div>
+                    <div class="tech2 javascript"></div>
+                    <div class="tech2 html"></div>
+                    <div class="tech2 css"></div>
+                </div>
+            </div>
+
+            <div class="card s">
+                <div class="title2">
+                    <div class="titleLogo2" style="background: url(images/projectLogo/musiclist-logo.png); background-size: cover;"></div>
+                    <div class="titleText2">Musiclist</div>
+                </div>
+                <div class="desc2">
                     React Example app to curate and save music playlists for users
                 </div>
-            
                 <div class="stack">
-                    <div class="tech node"></div>
-                    <div class="tech react"></div>
-                    <div class="tech javascript"></div>
-                    <div class="tech html"></div>
-                    <div class="tech css"></div>
-                </div>
-            
-                <div class="repo">
-                    <!-- <a href="#"> -->
-                        <div class="repoSite">Currently undeployed</div>
-                    <!-- </a> -->
-                    <div class="repoLink">Find this project on
-                        <a href="https://github.com/anjandash/musiclist" target="_blank">Github</a>
-                    </div>
+                    <div class="tech2 node"></div>
+                    <div class="tech2 react"></div>
+                    <div class="tech2 javascript"></div>
+                    <div class="tech2 html"></div>
+                    <div class="tech2 css"></div>
                 </div>
             </div>
-            
+
+            <div class="card s">
+                <div class="title2">
+                    <div class="titleLogo2" style="background: url(images/projectLogo/breathy-logo.png); background-size: cover;"></div>
+                    <div class="titleText2">Breathy</div>
+                </div>
+                <div class="desc2">
+                    Super-minimal breathing app for Android
+                </div>
+                <div class="stack">
+                    <div class="tech2 android"></div>
+                    <div class="tech2 java"></div>
+                    <div class="tech2 xml"></div>
+                </div>
+            </div>  
+
            
             <p style="margin-top:80px;">Interaction Design & Landing Pages:</p>
             <br/>
 
             <div class="card xs">
-                <div class="title">
-                    <div class="titleLogo" style="background: url(images/projectLogo/hipcentral-logo.png); background-size: cover;"></div>
-                    <div class="titleText">HipCentral</div>
+                <div class="title2">
+                    <div class="titleLogo2" style="background: url(images/projectLogo/hipcentral-logo.png); background-size: cover;"></div>
+                    <div class="titleText2">HipCentral</div>
                 </div>
-                <div class="desc line">
-                    Example app to for users
+                <div class="desc2">
+                    Demo fashion store interaction design
                 </div>
                 <div class="repo">
                     <a href="https://anjandash.github.io/hipcentral/" target="_blank">
@@ -299,12 +305,12 @@
             </div>
 
             <div class="card xs">
-                <div class="title">
-                    <div class="titleLogo" style="background: url(images/projectLogo/aviator-logo.png); background-size: cover;"></div>
-                    <div class="titleText">Aviator</div>
+                <div class="title2">
+                    <div class="titleLogo2" style="background: url(images/projectLogo/aviator-logo.png); background-size: cover;"></div>
+                    <div class="titleText2">Aviator</div>
                 </div>
-                <div class="desc line">
-                    Example app to for users
+                <div class="desc2">
+                    Generic landing page example
                 </div>
                 <div class="repo">
                     <a href="https://anjandash.github.io/aviator/" target="_blank">
@@ -463,7 +469,7 @@
                 </div>
             </div>
 
-            <p class="subhead">Frameworks & Libraries:</p>
+            <p class="subhead">Frameworks & Libraries I have worked with:</p>
             <br/>
 
             <div class="card small angular">
@@ -558,24 +564,29 @@
 
         <div class="introCont">
             <!-- <h2>Interests:</h2> -->
-            <p class="" style="margin-top: 20px;">Things I think about / read / do in my downtime:</p>
+            <p class="" style="margin-top: 20px;">Things I think about / read in my downtime:</p>
             <br/>
 
-            <div class="card xs">
-                space science
+            <div class="card mini spacex">
+                <p class="modex">space science</p>
             </div>
             
-            <div class="card xs">
-                technology
+            <div class="card mini technologyx">
+                <p class="modex">technology</p>
             </div>
             
-            <div class="card xs">
-                quantum physics
+            <div class="card mini quantumx">
+                <p class="modex">quantum physics</p>
             </div>
         </div>
 
         <div class="introCont invisible">
             <!-- /* Bottom padding space */ -->
+        </div>
+
+        <div id="endBlockHolder">
+            <div class="endBlock"></div>
+            <div class="endBlock"></div>
         </div>
 
     </div>

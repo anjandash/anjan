@@ -19,6 +19,15 @@ a{
     cursor: pointer;
 }
 
+/* Miscell classes*/
+
+.side{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Project classes */
+
 #headerPrime{
     width: 100%;
     height: 470px;
@@ -126,7 +135,7 @@ a{
 
 .midFrame{
     width: 90%;
-    height: 110px;
+    height: 80px;
 
     color: #e7ff00;
     margin: 2px auto;
@@ -139,7 +148,7 @@ a{
 }
 
 .bottomFrame{
-    margin: 15px 0px 0px;
+    margin: 25px 0px 0px;
     color: gold;
     color: #ffd700EE; /* gold */
     color: #AF66D1;
@@ -152,12 +161,11 @@ a{
     -webkit-text-fill-color: transparent;
 
     text-shadow: -1px -1px violet;
-    opacity: 0.8;
-    /* font-size: 16px; */
+    opacity: 0.9;
 
-    transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
 }
 
 .intro:hover{
@@ -253,6 +261,320 @@ a{
     -webkit-border-radius: 5px;
 }
 
+#appsintro{
+    width: 380px;
+    height: 80px;
+
+    background-color: #EDEDED;
+    margin-top: -15px;
+
+    box-sizing: border-box;
+    padding-top: 27px;
+
+    border: 0px solid red;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#grid[data-columns]::before {
+	content: '2 .column.size-1of2';
+}
+
+.column { display: inline-block; vertical-align: top; margin: 0px 10px; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 380px; }
+.size-1of3 { width: 33.333%; }
+
+.appCard{
+    width: 380px;
+    height: 450px;
+
+    color: white;
+    background: #6D46B1;
+    display: inline-block;
+    vertical-align: top;
+
+    border: 0px solid #E6E6E6;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-top: 26px;
+
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+
+    box-shadow: 0 8px 20px -10px grey;
+    -moz-box-shadow: 0 8px 20px -10px grey;
+    -webkit-box-shadow: 0 8px 20px -10px grey;
+
+    position: relative;
+}
+
+.appCard:hover{
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+.curtain{
+    width: 100%;
+    height: 420px;
+
+    margin-left: -1px;
+    margin-top: -1px;
+    padding-top: 1px;
+    padding-right: 2px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;    
+}
+
+.app1{
+    height: 450px;
+    background-color: orangered;
+
+    background-image: url('../../images/backgrounds/blank.png');
+    background-size: cover;
+    background-position-x: 40%;
+    background-blend-mode: luminosity;
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.app1:hover{
+    background-color: orangered;
+    background-image: url('../../images/backgrounds/mobile.jpg');
+    background-position-x: 60%;
+    background-blend-mode: luminosity;
+}
+
+.app2{
+    height: 450px;
+    background-color: black; 
+    margin-top: 80px;
+
+    background-image: url('../../images/backgrounds/blank.png');
+    background-size: cover;
+    background-position-x: 40%;
+    background-blend-mode: luminosity;
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.app2:hover{
+    background-color: #F5F5F5;
+    background-image: url('../../images/backgrounds/desktop.jpg');
+    background-position-x: 60%;
+    background-blend-mode: luminosity;
+}
+
+.app3{
+    height: 450px;  
+    background-color: #505050;
+
+    background-image: url('../../images/backgrounds/blank.png');
+    background-size: cover;
+    background-position-x: 40%;
+    background-blend-mode: luminosity;
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.app3:hover{
+    background-color: #505050;
+    background-image: url('../../images/backgrounds/mobile.jpg');
+    background-position-x: 60%;
+    background-blend-mode: luminosity;
+}
+
+.app4{
+    height: 450px;
+    background-color: #00CEFF;
+
+    background-image: url('../../images/backgrounds/blank.png');
+    background-size: cover;
+    background-position-x: 40%;
+    background-blend-mode: luminosity;
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.app4:hover{
+    background-color: #00CEFF;
+    background-image: url('../../images/backgrounds/desktop.jpg');
+    background-position-x: 60%;
+    background-blend-mode: luminosity;
+}
+
+.app5{
+    height: 450px;
+    background-color: #F9A337;
+
+    background-image: url('../../images/backgrounds/blank.png');
+    background-size: cover;
+    background-position-x: 40%;
+    background-blend-mode: luminosity;
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.app5:hover{
+    background-color: #F9A337;
+    background-image: url('../../images/backgrounds/desktop.jpg');
+    background-position-x: 60%;
+    background-blend-mode: luminosity;
+}
+
+.app6{
+    height: 450px;
+    background-color: #6D46B1;
+
+    background-image: url('../../images/backgrounds/blank.png');
+    background-size: cover;
+    background-blend-mode: luminosity;
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.app6:hover{
+    background-color: #6D46B1;
+    background-image: url('../../images/backgrounds/desktop.jpg');
+    background-position-x: 60%;
+    background-blend-mode: luminosity;
+}
+
+.bstack{
+    width: 92%;
+    height: 90px;
+
+    background: white;
+    position: absolute;  
+    left: 4%;  
+    bottom: 38%;
+
+    border: 1px solid rgba(245,245,245,0.8);
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.repository{
+    width: 40px;
+    height: 40px;
+
+    color: grey;
+    background: white;
+    background-image: url('../../images/assets/link.png');
+    background-position: 60% 40%;
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+
+    position: absolute;  
+    right: -10px;  
+    top: -10px;
+
+    box-sizing: border-box;
+    padding-top: 35px;
+    border: 1px solid whitesmoke;    
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;  
+
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+    box-shadow: 0 8px 20px -10px lightgrey;
+    -moz-box-shadow: 0 8px 20px -10px lightgrey;
+    -webkit-box-shadow: 0 8px 20px -10px lightgrey;
+    
+    cursor: pointer;
+}
+
+.deployment{
+    width: 0px;
+    height: 90px;
+
+    color: grey;
+    background: white;
+
+    visibility: hidden;
+    position: absolute;  
+    right: 0px;  
+    bottom: 0%;
+
+    box-sizing: border-box;
+    padding-top: 35px;
+    border: 0px solid lightgrey;    
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;  
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.appCard:hover{
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.appCard:hover > .curtain{
+    height: 380px;
+    background-color: rgba(255, 255, 255, 0.90);
+}
+
+.appCard:hover > .deployment{
+    width: 180px;
+    opacity: 1;
+    visibility: visible;
+
+    transition: all 0.2s 0.5s ease-in-out;
+    -moz-transition: all 0.2s 0.5 ease-in-out;
+    -webkit-transition: all 0.2s 0.5 ease-in-out;
+}
+
+.arrow{
+    height: 18px;
+    width: 18px;
+
+    background: url('../../images/assets/next.png');
+    background-size: cover;
+    margin: 2px 0px 0px 12px;
+    cursor: pointer;
+}
+
 .card{
     width: 28%;
     height: 160px;
@@ -279,54 +601,121 @@ a{
 
 .title{
     width: 100%;
-    height: auto;
+    height: 80px;
 
-    border: 0px solid whitesmoke;
+    border: 0px solid red;
     box-sizing: border-box;
 
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;  
 
-    padding: 5px 5px;
+    box-sizing: border-box;
+    padding: 22px 22px;
 }
 
 .titleLogo{
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: 50px;
 
     border: 1px solid transparent;
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
 
-    margin: -5px 5px 0px -3px;
-
-    display: inline-block;
-    vertical-align: top;
+    float: left;
 }
 
 .titleText{
-    margin-top: -2px;
-    display: inline-block;
-    vertical-align: top;
+    margin: 8px 0px 0px 15px;
+    font-size: 28px;
+    color: #505050;
+    float: left;
 }
 
 .desc{
-    width: 100%;
-    height: 55px;
+    width: 75%;
+    height: 60px;
 
     /* white-space: nowrap;*/
     overflow: hidden;
     text-overflow: ellipsis;
 
     font-family: Nunito;
-    font-size: 14px;
+    font-size: 15px;
 
     border: 0px solid red;
 
-    color: lightgrey;
-    margin: 5px auto;
+    color: darkgrey;
+    margin: 10px auto 5px;
+}
+
+.title2{
+    width: 100%;
+    height: 42px;
+
+    border: 0px solid red;
+    background-color: white;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;  
+
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+.titleLogo2{
+    height: 40px;
+    width: 40px;
+
+    border: 0px solid rgba(245,245,245,0.5);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+    float: left;
+}
+
+.titleText2{
+    margin: 8px 0px 0px 15px;
+    font-size: 18px;
+    color: #505050;
+    float: left;
+}
+
+.desc2{
+    width: 100%;
+    height: auto;
+
+    /* white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-family: Nunito;
+    font-size: 15px;
+
+    border: 0px solid red;
+
+    color: darkgrey;
+    margin: 10px auto 5px;
+}
+
+.build{
+    width: 80%;
+    height: 100px;
+
+    color: darkgrey;
+    background: rgba(255, 255, 255, 0.80);
+    border: 1px solid rgba(245,245,245,0.8);
+    margin: 0px auto;
+
+    box-sizing: border-box;
+    padding: 7px 0px;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 .line{
@@ -346,18 +735,33 @@ a{
 }
 
 .tech{
-    width: 36px;
-    height: 36px;
+    width: 56px;
+    height: 56px;
 
-    border: 2px solid #d1d1d1;
-    border-radius: 19px;
-    -moz-border-radius: 19px;
-    -webkit-border-radius: 19px;  
+    border: 2px solid rgba(240,240,240,0.3);
+    border-radius: 40%;
+    -moz-border-radius: 40%;
+    -webkit-border-radius: 40%;  
     
     display: inline-block;
     vertical-align: top;
 
-    margin: 0px 2px 0px;
+    margin: 14px 2px 0px;
+}
+
+.tech2{
+    width: 36px;
+    height: 36px;
+
+    border: 2px solid rgba(240,240,240,0.3);
+    border-radius: 40%;
+    -moz-border-radius: 40%;
+    -webkit-border-radius: 40%;  
+    
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 5px 2px 0px;
 }
 
 .android{
@@ -596,8 +1000,12 @@ a{
     text-align: center;
 }
 
+.s{
+    height: 140px;
+}
+
 .xs{
-    height: 80px;
+    height: 110px;
 }
 
 .xs a{
@@ -662,4 +1070,43 @@ a{
 .light{
     color: darkgrey;
     font-size: 14px;
+}
+
+.space{
+    background: url('../../images/backgrounds/space.jpg');
+    background-size: cover;
+}
+
+.technology{
+    background: url('../../images/backgrounds/tech.jpg');
+    background-size: cover;
+}
+
+.quantum{
+    background: url('../../images/backgrounds/quantum.jpg');
+    background-size: cover;
+}
+
+.mode{
+    color: lightgrey;
+    background: rgba(0,0,0,0.4);
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+#endBlockHolder{
+    width: 810px;
+    height: auto;
+    margin: -20px auto 50px;
+}
+
+.endBlock{
+    width: 400px;
+    height: 120px;
+
+    display: inline-block;
+    vertical-align: top;
+
+    background: lightgrey;
 }
