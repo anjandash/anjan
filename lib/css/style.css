@@ -16,6 +16,7 @@
 }
 
 a{
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -575,6 +576,16 @@ a{
     cursor: pointer;
 }
 
+.arrow-white{
+    height: 18px;
+    width: 18px;
+
+    background: url('../../images/assets/next-white.png');
+    background-size: cover;
+    margin: 2px 0px 0px 12px;
+    cursor: pointer;
+}
+
 .card{
     width: 28%;
     height: 160px;
@@ -1004,11 +1015,29 @@ a{
     height: 140px;
 }
 
-.xs{
+.xxs{
     height: 110px;
 }
 
+.xs{
+    height: 80px;
+    margin-bottom: 15px;
+}
+
 .xs a{
+    text-decoration: none;
+    color: navy;
+    font-size: bold;
+}
+
+.medium{
+    height: 50px;
+    background-size: 30%;
+    background-repeat: no-repeat;    
+    background-position: 95% 15%;      
+}
+
+.medium a{
     text-decoration: none;
     color: navy;
     font-size: bold;
@@ -1021,11 +1050,23 @@ a{
     background-position: 95% -10%;  
 }
 
+.small a{
+    text-decoration: none;
+    color: navy;
+    font-size: bold;
+}
+
 .mini{
     height: 40px;
     background-size: 30%;
     background-repeat: no-repeat;    
     background-position: 95% 15%;  
+}
+
+.mini a{
+    text-decoration: none;
+    color: navy;
+    font-size: bold;
 }
 
 .subhead{
@@ -1109,4 +1150,40 @@ a{
     vertical-align: top;
 
     background: lightgrey;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    cursor: pointer;
+}
+
+.uni{
+    margin-bottom: 8px;
+    font-size: 14px;
+
+    color: #6D46B1;
+    color: royalblue;
+}
+
+.sxc{
+    width: 70px; 
+    height: 70px; 
+    background-image: url('../../images/assets/sxc.jpg'); 
+    background-size: cover;
+}
+
+.unibz{
+    width: 70px; 
+    height: 70px; 
+    background-image: url('../../images/assets/unibz.png'); 
+    background-size: cover;
+}
+
+.introside{
+    width: 33%; 
+    height: 100%; 
+    margin-left: 75px; 
+    background: whitesmoke;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
