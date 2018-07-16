@@ -1180,7 +1180,10 @@ a{
 .introside{
     width: 33%; 
     height: 100%; 
+
     margin-left: 75px; 
+    margin-top: -5px;
+    padding: 5px 0px;
     background: whitesmoke;
 
     border-radius: 5px;
