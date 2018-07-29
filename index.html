@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="lib/css/style.css" />
     <link rel="shortcut icon" type="image/png" href="images/assets/favicon.png"/>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="lib/js/salvattore.js"></script>
     <script src="lib/js/main.js"></script>
 
@@ -16,6 +18,8 @@
            window.open('https://mail.google.com/mail/?view=cm&fs=1&to=anjan8@gmail.com');
         }
     </script>
+
+
 </head>
 <body>
 
@@ -57,10 +61,6 @@
 
         <div class="introCont">
             <br/>
-
-            <!-- <p>Details:</p>
-            <br/> -->
-
             <div class="card xxs" style="width: 90%;">
                 <div class="side">
                     <span style="font-size: 17px;">Anjan Karmakar</span><br/>
@@ -110,8 +110,9 @@
 
         <div class="introCont">
             <!-- <h2>Skills:</h2> -->
-            <p class="subhead" style="margin-top: 30px;">Languages I often use while building apps:</p><br/>
+            <!-- <p class="subhead" style="margin-top: 30px;">Languages I often use while building apps:</p><br/> -->
 
+            <br/>
             <div class="card xs">
                 <div class="langHead">
                     <div class="langName">Javascript</div>
@@ -286,8 +287,7 @@
         </div>   
 
         <div class="introCont">
-            <br/>
-
+           
             <div id="grid" data-columns>
                 <div class="column size-1of2">
                     <div class="appCard app1">
@@ -579,7 +579,7 @@
         </div> -->
 
         <div class="introCont primeColor">
-            <div class="introText">Other projects</div>
+            <div class="introText">Other work</div>
         </div>
 
         <div class="introCont">
@@ -653,6 +653,12 @@
         </div>
 
     </div>
+
+    <script>
+        window.sr = ScrollReveal({ reset: false });       
+        sr.reveal('.primeColor', { duration: 800, delay: 0, opacity: 0, origin: 'bottom', distance: '50px', easing: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)', scale: 1, viewFactor: 1.0 });
+        sr.reveal('.introCont', { duration: 800, delay: 0, opacity: 0, origin: 'bottom', distance: '50px', easing: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)', scale: 1, viewFactor: 0.1 });
+    </script>
     
 </body>
 </html>
