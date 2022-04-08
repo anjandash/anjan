@@ -842,6 +842,7 @@ a{
 .python{
    background: url(../../images/stackLogo/python.png);
    background-size: cover;   
+   color: #488BBE;	
 }
 
 .java{
