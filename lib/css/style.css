@@ -839,6 +839,11 @@ a{
    background-position: 2px 2px;      
 }
 
+.python{
+   background: url(../../images/stackLogo/python.png);
+   background-size: cover;   
+}
+
 .java{
    background: url(../../images/stackLogo/java.png);
    background-size: cover;  
